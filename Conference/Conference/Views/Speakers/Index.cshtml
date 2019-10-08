@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Speakers>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="">
+    <div class="container">
+        <div class="row parent">
+            @foreach (var item in Model)
+            {
+
+                <div class="col-sm-12 col-lg-3 child">
+
+                    <div class="details">
+                        <a class="link" href="/@item.Edition/speakers/@string.Format(item.FirstName+"-"+item.LastName)">
+                            <span class="name">@item.FullName</span>
+                            <span class="position">@item.Position, @item.CompanyName</span>
+
+                        </a>
+                        <ul class="speaker-socials">
+
+                            @if (item.Twitter != null)
+
+                            {
+                                <li>
+                                    <a target="_blank" class="link d-inline" href="@item.Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                            }
+
+
+                            @if (item.Website != null)
+                            {
+                                <li>
+
+                                    <a target="_blank" class="link d-inline" href="@item.Website">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </li>
+                            }
+
+                            @if (item.LinkedIn != null)
+                            {
+
+                                <li>
+                                    <a target="_blank" class="link d-inline" href="@item.LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            }
+
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+</div>

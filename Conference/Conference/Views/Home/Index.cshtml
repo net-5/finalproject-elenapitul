@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Speakers>;
+
+@{
+    ViewData["Title"] = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/countdown.js"></script>
+
+<section id="hero" class="hero-section align-center light-text window-height center-content text-center bg-cover">
+    <div class="heading-block">
+        <div class="container">
+            <div class="hero-heading-top">
+                <span id="countbox"> 
+                    
+                </span> to the event
+
+            </div>
+            <div class="logo">
+                <img src="~/img/[dotnetdays]colored-v2@2x.png">
+            </div>
+            <h1 class="hero-heading-main">
+                2020
+            </h1>
+            <div class="location">
+                29 February 2020 | International Hotel, Iasi, Romania
+            </div>
+            <div class="btns-container">
+                <a href="http://dotnetdays.eventbrite.com" target="_blank" class="btn btn-large btn-main">
+                    Register
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="counters-wrapper" style="height:90px;">
+    </div>
+</section>
+
+<div class="container">
+    <div class="row parent">
+        <div class="col-sm-12 col-lg-3 child" style="background-image:url(https://dndays.blob.core.windows.net/img/91/alex-thissen.png)">
+
+            <div class="details">
+                <a class="link" href="/speakers/alex-thissen">
+                    <span class="name">Alex Thissen</span>
+                    <span class="position">Cloud architect</span>
+                    <span class="position">Xpirit</span>
+
+                </a>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" class="link d-inline" href="https://twitter.com/alexthissen">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="col-sm-12 col-lg-3 child" style="background-image:url(https://dndays.blob.core.windows.net/img/92/alex-mang.png)">
+
+            <div class="details">
+                <a class="link" href="/speakers/alex-mang">
+                    <span class="name">Alex Mang</span>
+                    <span class="position">CEO, Microsoft MVP&amp; RD</span>
+                    <span class="position">KeyTicket Solutions</span>
+
+                </a>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" class="link d-inline" href="https://twitter.com/iamalexmang">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="link d-inline" href="https://alexmang.com/">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-sm-12 col-lg-3 child" style="background-image:url(https://dndays.blob.core.windows.net/img/94/dennis-doomen.png)">
+
+            <div class="details">
+                <a class="link" href="/speakers/dennis-doomen">
+                    <span class="name">Dennis Doomen</span>
+                    <span class="position">Software Architect</span>
+                    <span class="position">Aviva Solutions</span>
+
+                </a>
+                <ul class="speaker-socials">
+                    <li>
+                        <a target="_blank" class="link d-inline" href="https://twitter.com/ddoomen">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

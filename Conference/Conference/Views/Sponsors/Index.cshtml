@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Sponsors>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="">
+
+
+        @*<div class="container">
+                <section>
+                    @foreach (var item in Model)
+                    {
+                        <h3 class="title text-left">@Html.DisplayFor(modelItem => item.SponsorTypeId)</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 sponsor-item">
+
+                                <a href="@Html.DisplayFor(modelItem => item.Website)" style="" target="_blank">
+
+                                    <img class="img-fluid" title="@Html.DisplayFor(modelItem => item.Name)" style="max-height:168px" src="~/img/sponsors/@string.Format(item.Name+".png")" alt="No picture to show">
+                                </a>
+
+                            </div>
+                        </div>
+                    }
+
+                </section>
+
+            </div>
+        </div>*@
+
+        <div class="container">
+            <section>
+                <h3 class="title text-left">Community</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 sponsor-item">
+                        <a href="https://www.meetup.com/DotNetIasi/" style="" target="_blank">
+                            <img class="img-fluid" title="DotNetIasi" style="max-height:168px" src="https://dndays.blob.core.windows.net/partners/60/dotnetiasi.png" alt="No picture to show" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="title text-left">Gold</h3>
+                <div class="row">
+                </div>
+            </section>
+            <section>
+                <h3 class="title text-left">Supported by</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 sponsor-item">
+                        <a href="http://microsoft.com" style="" target="_blank">
+                            <img class="img-fluid" title="Microsoft" style="max-height:168px" src="https://dndays.blob.core.windows.net/partners/61/microsoft.png" alt="No picture to show" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>

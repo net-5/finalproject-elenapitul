@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Conference.Domain.Entities.Workshops>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<div class="">
+    <section class="container">
+        <div>
+            <h1>Workshops</h1>
+        </div>
+        <div class="parent row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 child workshop">
+                    <div class="text-big mv fixed">
+                        <a class="name" href="aici o sa pui adresa generata">@Html.DisplayFor(modelItem => item.Name)</a>
+                    </div>
+
+                    <span class="sub-title mv">@Html.DisplayFor(modelItem => item.SpeakerId)</span>
+                    <a target="_blank" href="https://www.eventbrite.com" class="btn btn-primary">Register</a>
+
+                </div>
+            }
+
+        </div>
+    </section>
+
+</div>*@
+
+<div class="">
+
+    <section class="container">
+        <div>
+            <h1 class="title mv container">Workshops</h1>
+        </div>
+        <div class="parent row">
+            <div class="col-lg-3 child workshop">
+                <span class="talk-time">22/02, 14:00 - 18:00</span>
+                <div class="text-big mv fixed">
+                    <a class="name" href="/2019/Workshops/Details/1">
+                        Deep-Dive in Asp Core
+                    </a>
+                </div>
+
+
+                <span class="sub-title mv">Irina Scurtu</span>
+                <a target="_blank" href="NULLhttps://www.eventbrite.com/e/workshop-deep-dive-in-asp-core-22-tickets-55864731917" class="btn btn-primary">Register</a>
+            </div>
+            <div class="col-lg-3 child workshop">
+                <span class="talk-time">22/02, 14:00 - 18:00</span>
+                <div class="text-big mv fixed">
+                    <a class="name" href="/2019/Workshops/Details/2">
+                        dotnet with Docker on Linux
+                    </a>
+                </div>
+
+
+                <span class="sub-title mv">Andrei Mustata</span>
+                <a target="_blank" href="https://www.eventbrite.com/e/dotnet-with-docker-on-linux-tickets-55864650674" class="btn btn-primary">Register</a>
+            </div>
+            <div class="col-lg-3 child workshop">
+                <span class="talk-time">22/02, 9:00 - 13:00</span>
+                <div class="text-big mv fixed">
+                    <a class="name" href="/2019/Workshops/Details/3">
+                        Clean Code: Dive beyond the theory
+                    </a>
+                </div>
+
+
+                <span class="sub-title mv">Mihaela Ghidersa</span>
+                <a target="_blank" href="https://www.eventbrite.com/e/clean-code-dive-beyond-the-theory-tickets-55864850271" class="btn btn-primary">Register</a>
+            </div>
+            <div class="col-lg-3 child workshop">
+                <span class="talk-time">22/02, 9:00 - 13:00</span>
+                <div class="text-big mv fixed">
+                    <a class="name" href="/2019/Workshops/Details/4">
+                        Applied serverless: event-driven processing in Azure
+                    </a>
+                </div>
+
+
+                <span class="sub-title mv">Andrei Scutariu</span>
+                <a target="_blank" href="https://www.eventbrite.com/e/workshop-azure-serverless-event-processing-tickets-55864704836" class="btn btn-primary">Register</a>
+            </div>
+        </div>
+
+    </section>
+</div>

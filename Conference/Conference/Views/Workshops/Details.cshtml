@@ -1,0 +1,131 @@
+﻿@model Conference.Domain.Entities.Workshops
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+@*<div>
+        <h4>Workshops</h4>
+        <hr />
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Prerequisites)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Prerequisites)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Requirements)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Requirements)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.PlacesAvailable)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.PlacesAvailable)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Edition)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Edition)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.SpeakerId)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.SpeakerId)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.RegistrationLink)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.RegistrationLink)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+
+<div class="">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 offset-md-2 space-big">
+                <h1 class="title">Deep-Dive in Asp Core</h1>
+                <div class="text">
+                    <p style="box-sizing: border-box; margin: 16px 0px 0px; color: #333333; font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; background-color: #ffffff;"><strong style="box-sizing: border-box;">Topics covered</strong>:</p>
+                    <ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 12.5px; color: #333333; font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; background-color: #ffffff;">
+                        <li style="box-sizing: border-box;">Storing secrets in development and production</li>
+                        <li style="box-sizing: border-box;">Configuration options</li>
+                        <li style="box-sizing: border-box;">Middlewares</li>
+                        <li style="box-sizing: border-box;">Logging</li>
+                        <li style="box-sizing: border-box;">Input Formatters, Output Formatters</li>
+                        <li style="box-sizing: border-box;">Custom Media types</li>
+                        <li style="box-sizing: border-box;">Managing data using Entity Framework Core</li>
+                        <li style="box-sizing: border-box;">Running background tasks in your application</li>
+                        <li style="box-sizing: border-box;">HttpClientFactory</li>
+                        <li style="box-sizing: border-box;">Hosting Options</li>
+                        <li style="box-sizing: border-box;">HSTS, CSP, HPKP, Switching to HTTP/2, HealthChecks</li>
+                        <li style="box-sizing: border-box;">TagHelpers</li>
+                        <li style="box-sizing: border-box;">ViewComponents</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-3 offset-md-1 bg-mv text-center space">
+                <span class="sub-title">Workshop</span>
+                <div class="text-left">
+                    <img class="img-responsive img-fluid col-md-4 col-sm-12" src="https://dndays.blob.core.windows.net/img/77/irina-scurtu-small.png" alt="Alternate Text" />
+                </div>
+                <h2 class="text-big text-left">
+                    <a href="/2019/speakers/irina-scurtu">
+                        Irina Scurtu
+                    </a>
+                </h2>
+                <ul class="speaker-socials left">
+                    <li>
+                        <a target="_blank" class="link d-inline" href="https://twitter.com/irina_scurtu">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="sub-title">Date & time</span>
+                <span class="text-big text-left">14:00 - 18:00</span>
+
+                <span class="sub-title">Location</span>
+                <span class="text-big text-left">FabLab, Room 3</span>
+                <span class="sub-title">Places Available</span>
+                <span class="text-big text-left">17</span>
+                <div style="height:15rem"></div>
+                <a target="_blank" href="NULLhttps://www.eventbrite.com/e/workshop-deep-dive-in-asp-core-22-tickets-55864731917" class="btn btn-primary">Register</a>
+
+            </div>
+        </div>
+    </div>
+</div>
