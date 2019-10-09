@@ -10,3 +10,14 @@ C:\Users\APE\source\repos\Conference\Conference.Data\bin\Debug\netstandard2.0\Co
 C:\Users\APE\source\repos\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csproj.CopyComplete
 C:\Users\APE\source\repos\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.dll
 C:\Users\APE\source\repos\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.pdb
+C:\Cmder\Conference\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.deps.json
+C:\Cmder\Conference\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.dll
+C:\Cmder\Conference\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Data.pdb
+C:\Cmder\Conference\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Domain.dll
+C:\Cmder\Conference\Conference\Conference.Data\bin\Debug\netstandard2.0\Conference.Domain.pdb
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csprojAssemblyReference.cache
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.AssemblyInfoInputs.cache
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.AssemblyInfo.cs
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.csproj.CopyComplete
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.dll
+C:\Cmder\Conference\Conference\Conference.Data\obj\Debug\netstandard2.0\Conference.Data.pdb

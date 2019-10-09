@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<Conference.Domain.Entities.Talks>
 
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -59,3 +62,6 @@
         }
     </tbody>
 </table>
+
+<br />
+<a asp-controller="List" asp-action="Index">Back List</a>

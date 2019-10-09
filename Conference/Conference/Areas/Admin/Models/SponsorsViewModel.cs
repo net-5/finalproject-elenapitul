@@ -35,6 +35,6 @@ namespace Conference.Areas.Admin.Models
         public string Edition { get; set; }
 
         public virtual SponsorTypes SponsorType { get; set; }
-        public virtual ICollection<SponsorPhoto> SponsorPhoto { get; set; }
+        //public virtual ICollection<SponsorPhoto> SponsorPhoto { get; set; }
     }
 }

@@ -63,8 +63,9 @@ namespace Conference.Areas.Admin.Controllers
 
                     return View(model);
                 }
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            return View(model);
 
         }
         

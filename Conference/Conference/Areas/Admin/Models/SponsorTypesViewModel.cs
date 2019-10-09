@@ -13,11 +13,10 @@ namespace Conference.Areas.Admin.Models
         public int Id { get; set; }
 
         [Required]
-        [MinLength(2, ErrorMessage = "Sponsor Type name can't be less than 2 characters")]
-        [MaxLength(25, ErrorMessage = "Sponsor Type name can't have more than 25 characters")]
         public string Name { get; set; }
 
         [Required]
+        [Range(1, 50)]
         public int Order { get; set; }
 
         [Required]

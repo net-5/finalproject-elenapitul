@@ -1,6 +1,6 @@
-﻿@model Conference.Domain.Entities.Editions
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, AuthoringTagHelpers
+﻿@model Conference.Areas.Admin.Models.EditionsViewModel
+
+
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -45,6 +45,8 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+
+    <br />
     <a asp-action="Index">Back to List</a>
 </div>

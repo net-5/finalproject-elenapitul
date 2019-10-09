@@ -12,11 +12,13 @@ namespace Conference.Areas.Admin.Models
         public int Id { get; set; }
 
         [Required]
-        [MinLength(2)]
+        [MinLength(2, ErrorMessage = "Speaker's firstname can't be less than 2 characters")]
+        [MaxLength(50, ErrorMessage = "Speaker's firstname can't have more than 50 characters")]
         public string FirstName { get; set; }
 
         [Required]
-        [MinLength(2)]
+        [MinLength(2, ErrorMessage = "Speaker's lastname can't be less than 2 characters")]
+        [MaxLength(50, ErrorMessage = "Speaker's lastname can't have more than 50 characters")]
         public string LastName { get; set; }
 
         [Required]
@@ -40,7 +42,7 @@ namespace Conference.Areas.Admin.Models
         [Required]
         public string Edition { get; set; }
 
-        public virtual ICollection<Photos> Photos { get; set; }
+        //public virtual ICollection<Photos> Photos { get; set; }
         public virtual ICollection<Talks> Talks { get; set; }
         public virtual ICollection<Workshops> Workshops { get; set; }
     }
