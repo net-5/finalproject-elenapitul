@@ -3297,11 +3297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Service\\Conference.Service.csproj",
+      "projectUniqueName": "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj",
       "projectName": "Conference.Service",
-      "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Service\\Conference.Service.csproj",
+      "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj",
       "packagesPath": "C:\\Users\\APE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Service\\obj\\",
+      "outputPath": "C:\\Cmder\\Conference\\Conference\\Conference.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3320,11 +3320,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Data\\Conference.Data.csproj": {
-              "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Data\\Conference.Data.csproj"
+            "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj": {
+              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj"
             },
-            "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
-              "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Domain\\Conference.Domain.csproj"
+            "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
+              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj"
             }
           }
         }
@@ -3372,10 +3372,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

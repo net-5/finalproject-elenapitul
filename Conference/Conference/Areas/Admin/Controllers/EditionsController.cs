@@ -13,7 +13,6 @@ using Omu.ValueInjecter;
 
 namespace Conference.Areas.Admin.Controllers
 {
-    [Area("Admin")]
     public class EditionsController : Controller
     {
         private readonly IEditionsService editionService;
@@ -23,7 +22,7 @@ namespace Conference.Areas.Admin.Controllers
             this.editionService = editionService;
         }
 
-        
+        [Area("Admin")]
         // GET: Editions
         public ActionResult Index()
         {
@@ -31,7 +30,7 @@ namespace Conference.Areas.Admin.Controllers
             return View(allEditions);
         }
 
-        
+        [Area("Admin")]
         // GET: Editions/Details/5
         public ActionResult Details(int id)
         {
@@ -41,14 +40,14 @@ namespace Conference.Areas.Admin.Controllers
             return View(editions);
         }
 
-        
+        [Area("Admin")]
         // GET: Editions/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        
+        [Area("Admin")]
         // POST: Editions/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -60,19 +59,21 @@ namespace Conference.Areas.Admin.Controllers
 
                 edition.InjectFrom(model);
 
-                var createNewEdition = editionService.AddEdition(edition);
+                var editionToCreate = editionService.AddEdition(edition);
 
-                if (createNewEdition == null)
+                if (editionToCreate == null)
                 {
                     ModelState.AddModelError("Name", "The Name must be unique!");
 
                     return View(model);
                 }
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            return View(model);
         }
 
-        
+
+        [Area("Admin")]
         // GET: Editions/Edit/5
         public ActionResult Edit(int id)
         {
@@ -82,7 +83,7 @@ namespace Conference.Areas.Admin.Controllers
             return View(model);
         }
 
-        
+        [Area("Admin")]
         // POST: Editions/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -101,7 +102,7 @@ namespace Conference.Areas.Admin.Controllers
             }
         }
 
-        
+        [Area("Admin")]
         // GET: Editions/Delete/5
         public ActionResult Delete(int id, bool? saveChangesError = false)
         {
@@ -127,7 +128,7 @@ namespace Conference.Areas.Admin.Controllers
             }
         }
 
-        
+        [Area("Admin")]
         // POST: Editions/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 namespace Conference.TagHelpers
 {
     // You may need to install the Microsoft.AspNetCore.Razor.Runtime package into your project
-    [HtmlTargetElement("tag-name")]
+    [HtmlTargetElement("sponsorType", Attributes = ForAttributeName)]
     public class SponsorTypeTagHelper : TagHelper
     {
         private readonly ISponsorTypesService sponsorTypeService;

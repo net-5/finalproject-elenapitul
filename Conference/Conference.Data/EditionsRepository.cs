@@ -14,7 +14,7 @@ namespace Conference.Data
 
         Editions Update(Editions editionToUpdate);
 
-        Editions AddEdition(Editions editionToBeAdded);
+        Editions AddEdition(Editions editionToAdd);
 
         bool IsUniqueEdition(string editionName);
 

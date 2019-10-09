@@ -13,7 +13,7 @@ namespace Conference.Areas.Admin.Models
         public int Id { get; set; }
 
         [Required]
-        [MinLength(2, ErrorMessage = "User name can't be less than 2 characters")]
+        [MinLength(2)]        
         public string Name { get; set; }
 
         [Required]
@@ -21,7 +21,7 @@ namespace Conference.Areas.Admin.Models
 
 
         [Required]
-        [Range(2000, 2022)]
+        [Range(2000, 2025)]
         public int Year { get; set; }
         [Required]
         public bool Active { get; set; }

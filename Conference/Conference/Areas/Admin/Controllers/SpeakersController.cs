@@ -61,9 +61,10 @@ namespace Conference.Areas.Admin.Controllers
                     ModelState.AddModelError("Name", "Speaker name must be unique!");
                     return View(model);
                 }
+                return RedirectToAction(nameof(Index));
 
             }
-            return RedirectToAction(nameof(Index));
+            return View(model);            
         }
 
         

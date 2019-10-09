@@ -19,8 +19,6 @@ namespace Conference.Controllers
             this.sponsorService = sponsorService;
         }
 
-
-
         // GET: Sponsors
         public ActionResult Index()
         {
@@ -37,73 +35,73 @@ namespace Conference.Controllers
             return View(sponsor);
         }
 
-        // GET: Sponsors/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //// GET: Sponsors/Create
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        // POST: Sponsors/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
+        //// POST: Sponsors/Create
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        // GET: Sponsors/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        //// GET: Sponsors/Edit/5
+        //public ActionResult Edit(int id)
+        //{
+        //    return View();
+        //}
 
-        // POST: Sponsors/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
+        //// POST: Sponsors/Edit/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Edit(int id, IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add update logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        // GET: Sponsors/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //// GET: Sponsors/Delete/5
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
-        // POST: Sponsors/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+        //// POST: Sponsors/Delete/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Delete(int id, IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add delete logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
     }
 }

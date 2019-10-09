@@ -38,9 +38,9 @@ namespace Conference.Data
             return conferenceContext.Speakers.ToList();
         }
 
-        public Speakers AddSpeaker(Speakers speakerToBeAdded)
+        public Speakers AddSpeaker(Speakers speakerToAdd)
         {
-            var addedSpeaker = conferenceContext.Add(speakerToBeAdded);
+            var addedSpeaker = conferenceContext.Add(speakerToAdd);
             conferenceContext.SaveChanges();
             return addedSpeaker.Entity;
         }

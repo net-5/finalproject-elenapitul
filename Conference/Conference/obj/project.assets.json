@@ -13390,11 +13390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APE\\source\\repos\\Conference\\Conference\\Conference.csproj",
+      "projectUniqueName": "C:\\Cmder\\Conference\\Conference\\Conference\\Conference.csproj",
       "projectName": "Conference",
-      "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference\\Conference.csproj",
+      "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference\\Conference.csproj",
       "packagesPath": "C:\\Users\\APE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference\\obj\\",
+      "outputPath": "C:\\Cmder\\Conference\\Conference\\Conference\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13413,14 +13413,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Data\\Conference.Data.csproj": {
-              "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Data\\Conference.Data.csproj"
+            "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj": {
+              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj"
             },
-            "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
-              "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Domain\\Conference.Domain.csproj"
+            "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
+              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj"
             },
-            "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Service\\Conference.Service.csproj": {
-              "projectPath": "C:\\Users\\APE\\source\\repos\\Conference\\Conference.Service\\Conference.Service.csproj"
+            "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj": {
+              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj"
             }
           }
         }
@@ -13481,10 +13481,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
