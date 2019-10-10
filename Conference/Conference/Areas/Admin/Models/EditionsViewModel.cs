@@ -10,19 +10,23 @@ namespace Conference.Areas.Admin.Models
     public class EditionsViewModel
     {
 
-        public int Id { get; set; }
-
         [Required]
-        [MinLength(2)]        
+        [Key]
+        public int Id { get; set; }
+        
+        [Required]
+        [MaxLength(4, ErrorMessage = "Edition name can't have more than 4 characters.")]
         public string Name { get; set; }
 
         [Required]
+        [MinLength(1, ErrorMessage ="Please add a tagline")]
         public string TagLine { get; set; }
 
 
         [Required]
-        [Range(2000, 2025)]
+        [Range(2000,2030, ErrorMessage = "Please add a valid year.")]
         public int Year { get; set; }
+        
         [Required]
         public bool Active { get; set; }
 

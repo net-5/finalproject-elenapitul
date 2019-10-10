@@ -13390,11 +13390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cmder\\Conference\\Conference\\Conference\\Conference.csproj",
+      "projectUniqueName": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference\\Conference.csproj",
       "projectName": "Conference",
-      "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference\\Conference.csproj",
+      "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference\\Conference.csproj",
       "packagesPath": "C:\\Users\\APE\\.nuget\\packages\\",
-      "outputPath": "C:\\Cmder\\Conference\\Conference\\Conference\\obj\\",
+      "outputPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13413,14 +13413,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj": {
-              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj"
+            "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Data\\Conference.Data.csproj": {
+              "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Data\\Conference.Data.csproj"
             },
-            "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
-              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj"
+            "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
+              "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj"
             },
-            "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj": {
-              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Service\\Conference.Service.csproj"
+            "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Service\\Conference.Service.csproj": {
+              "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Service\\Conference.Service.csproj"
             }
           }
         }

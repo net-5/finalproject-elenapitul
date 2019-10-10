@@ -61,12 +61,11 @@ namespace Conference.Areas.Admin.Controllers
 
                     return View(model);
                 }
+
                 return RedirectToAction(nameof(Index));
             }
 
             return View(model);
-
-            
         }
         
         // GET: Workshops/Edit/5

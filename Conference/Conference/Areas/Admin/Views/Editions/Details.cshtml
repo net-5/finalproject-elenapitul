@@ -1,5 +1,4 @@
-﻿@model Conference.Areas.Admin.Models.EditionsViewModel
-
+﻿@model Conference.Domain.Entities.Editions
 
 @{
     ViewData["Title"] = "Details";
@@ -44,9 +43,11 @@
         </dd>
     </dl>
 </div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
 
-    <br />
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })    
+</div>
+
+<div>
     <a asp-action="Index">Back to List</a>
 </div>

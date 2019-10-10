@@ -1,7 +1,5 @@
 ﻿@model Conference.Areas.Admin.Models.EditionsViewModel
 
-
-
 @{
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -48,7 +46,10 @@
 
     <form asp-action="Delete">
         <input type="submit" value="Delete" class="btn btn-danger" />
-        <br />
-        <a asp-action="Index">Back to List</a>
     </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
 </div>
