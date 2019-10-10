@@ -49,21 +49,25 @@ namespace Conference.Areas.Admin.Controllers
         // POST: SponsorType/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SponsorTypesViewModel model)
+        public ActionResult Create(SponsorTypes model)
         {
             if (ModelState.IsValid)
             {
                 SponsorTypes sponsorTypes = new SponsorTypes();
                 sponsorTypes.InjectFrom(model);
+                
                 var createNewSponsorType = sponsorTypeService.AddSponsorType(sponsorTypes);
+                
                 if (createNewSponsorType == null)
                 {
                     ModelState.AddModelError("Name", "The Name must be unique!");
                     return View(model);
                 }
-                return RedirectToAction(nameof(Index));
+
+                //return RedirectToAction(nameof(Index));
             }
-            return View(model);
+            //return View(model);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: SponsorType/Edit/5

@@ -3273,11 +3273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj",
+      "projectUniqueName": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Data\\Conference.Data.csproj",
       "projectName": "Conference.Data",
-      "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\Conference.Data.csproj",
+      "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Data\\Conference.Data.csproj",
       "packagesPath": "C:\\Users\\APE\\.nuget\\packages\\",
-      "outputPath": "C:\\Cmder\\Conference\\Conference\\Conference.Data\\obj\\",
+      "outputPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3296,8 +3296,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
-              "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj"
+            "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj": {
+              "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj"
             }
           }
         }

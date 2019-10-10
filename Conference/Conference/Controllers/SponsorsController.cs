@@ -19,6 +19,8 @@ namespace Conference.Controllers
             this.sponsorService = sponsorService;
         }
 
+
+
         // GET: Sponsors
         public ActionResult Index()
         {

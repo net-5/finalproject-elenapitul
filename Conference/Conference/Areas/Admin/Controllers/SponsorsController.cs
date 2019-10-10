@@ -49,7 +49,7 @@ namespace Conference.Areas.Admin.Controllers
         // POST: Sponsors/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SponsorsViewModel model)
+        public ActionResult Create(Sponsors model)
         {
             if (ModelState.IsValid)
             {
@@ -66,11 +66,10 @@ namespace Conference.Areas.Admin.Controllers
                     return View(model);
                 }
 
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
             }
-
-            return View(model);
-            
+            return RedirectToAction(nameof(Index));
+            //return View(model);
         }
                 
         // GET: Sponsors/Edit/5

@@ -41,14 +41,14 @@ namespace Conference.Service
 
         public Speakers AddSpeaker(Speakers speakerToAdd)
         {
-            if (IsUniqueSpeaker(speakerToAdd.FullName))
-            {
+            //if (IsUniqueSpeaker(speakerToAdd.FullName))
+            //{
                 return speakersRepository.AddSpeaker(speakerToAdd);
-            }
-            else
-            {
-                return null;
-            }
+            //}
+            //else
+            //{
+            //    return null;
+            //}
         }
            
         public Speakers UpdateSpeaker(Speakers speakerToUpdate)
@@ -56,17 +56,17 @@ namespace Conference.Service
             return speakersRepository.Update(speakerToUpdate);
         }
 
-        private bool IsUniqueSpeaker(string speakerName)
-        {
-            if (speakersRepository.IsUniqueSpeaker(speakerName) == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        //private bool IsUniqueSpeaker(string speakerName)
+        //{
+        //    if (speakersRepository.IsUniqueSpeaker(speakerName) == true)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
 
         public void Delete(Speakers speakerToDelete)
         {
