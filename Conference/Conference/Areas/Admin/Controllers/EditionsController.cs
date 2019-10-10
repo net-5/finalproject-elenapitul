@@ -48,11 +48,11 @@ namespace Conference.Areas.Admin.Controllers
             return View();
         }
 
-        
+
         // POST: Editions/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Editions model)
+        public ActionResult Create(EditionsViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -68,10 +68,17 @@ namespace Conference.Areas.Admin.Controllers
 
                     return View(model);
                 }
-            }
-            return RedirectToAction(nameof(Index));
-        }
 
+                //return View(model);
+                return RedirectToAction(nameof(Index));
+            }
+
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
+        }
         
         // GET: Editions/Edit/5
         public ActionResult Edit(int id)

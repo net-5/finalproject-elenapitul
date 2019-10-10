@@ -14,7 +14,7 @@ namespace Conference.Service
 
         Editions AddEdition(Editions editionToAdd);
 
-        Editions UpdateEdition(Editions editionToUpdate);
+        Editions UpdateEdition(Editions editionToUpdate);        
 
         void Delete(Editions editionToDelete);
 

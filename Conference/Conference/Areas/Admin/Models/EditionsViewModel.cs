@@ -13,7 +13,7 @@ namespace Conference.Areas.Admin.Models
         [Required]
         [Key]
         public int Id { get; set; }
-        
+
         [Required]
         [MaxLength(4, ErrorMessage = "Edition name can't have more than 4 characters.")]
         public string Name { get; set; }
@@ -26,7 +26,7 @@ namespace Conference.Areas.Admin.Models
         [Required]
         [Range(2000,2030, ErrorMessage = "Please add a valid year.")]
         public int Year { get; set; }
-        
+
         [Required]
         public bool Active { get; set; }
 

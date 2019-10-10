@@ -49,28 +49,31 @@ namespace Conference.Areas.Admin.Controllers
         // POST: Speakers/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Speakers model)
+        public ActionResult Create(SpeakersViewModel model)
         {
             if (ModelState.IsValid)
             {
-                             
+
                 Speakers speaker = new Speakers();
                 speaker.InjectFrom(model);
 
                 var speakerToCreate = speakerService.AddSpeaker(speaker);
-                
+
                 if (speakerToCreate == null)
                 {
                     ModelState.AddModelError("Name", "Speaker name must be unique!");
                     return View(model);
                 }
 
-                //return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
                 //return View(model);
             }
 
-            return RedirectToAction(nameof(Index));
-            //return View(model);
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
 
         }
         

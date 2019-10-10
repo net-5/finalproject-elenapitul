@@ -26,7 +26,7 @@ namespace Conference.Areas.Admin.Models
         [MinLength(2,ErrorMessage ="Please add a description.")]
         [MaxLength(255, ErrorMessage ="Description can't have more than 255 characters.")]
         public string Description { get; set; }
-        
+
         public string PageSlug { get; set; }
 
         [Required]        
@@ -41,7 +41,9 @@ namespace Conference.Areas.Admin.Models
 
         [ForeignKey("SponsorTypeId")]
         public virtual SponsorTypes SponsorType { get; set; }
-        
+
         //public virtual ICollection<SponsorPhoto> SponsorPhoto { get; set; }
+              
+
     }
 }

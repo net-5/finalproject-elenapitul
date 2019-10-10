@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Conference.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -43,7 +44,7 @@ namespace Conference.Areas.Admin.Models
         public string CompanyWebsite { get; set; }
 
         [Required]
-        [MinLength(5, ErrorMessage ="Please add a description.")]
+        [MinLength(1, ErrorMessage ="Please add a description.")]
         public string Description { get; set; }
         
         public string PageSlug { get; set; }
@@ -52,9 +53,9 @@ namespace Conference.Areas.Admin.Models
         [MaxLength(4, ErrorMessage = "Edition name can't have more than 4 characters.")]
         public string Edition { get; set; }
 
-        //public virtual ICollection<Photos> Photos { get; set; }
-        //public virtual ICollection<Talks> Talks { get; set; }
-        //public virtual ICollection<Workshops> Workshops { get; set; }
+        public virtual ICollection<Photos> Photos { get; set; }
+        public virtual ICollection<Talks> Talks { get; set; }
+        public virtual ICollection<Workshops> Workshops { get; set; }
 
     }
 }

@@ -18,8 +18,7 @@ namespace Conference.Controllers
         {
             this.speakerService = speakerService;
         }
-
-
+        
         // GET: Speakers
         public ActionResult Index()
         {

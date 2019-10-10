@@ -47,7 +47,7 @@ namespace Conference.TagHelpers
                 };
 
                 //acesta este atributul care este returnat de output-ul din TagHelper
-                myOption.Attributes.Add("name", sponsorType.Name);
+                myOption.Attributes.Add("value", sponsorType.Id.ToString());
                 //acesta este atributul care se afiseaza in elementul "option"
                 myOption.InnerHtml.Append(sponsorType.Id.ToString());
 

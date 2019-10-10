@@ -25,7 +25,10 @@ namespace Conference.Areas.Admin.Models
         [MaxLength(4, ErrorMessage = "Edition name can't have more than 4 characters.")]
         public string Edition { get; set; }
 
-        public virtual ICollection<Sponsors> Sponsors { get; set; }
+        //public virtual ICollection<Sponsors> Sponsors { get; set; }
+
+       
+
     }
 }
 

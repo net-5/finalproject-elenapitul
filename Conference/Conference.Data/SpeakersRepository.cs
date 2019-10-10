@@ -16,7 +16,7 @@ namespace Conference.Data
 
         Speakers AddSpeaker(Speakers speakerToAdd);
 
-        //bool IsUniqueSpeaker(string speakerName);
+        bool IsUniqueSpeaker(string speakerName);
 
         void Delete(Speakers speakerToDelete);
 
@@ -57,19 +57,19 @@ namespace Conference.Data
             return updatedSpeaker.Entity;
         }
 
-        //public bool IsUniqueSpeaker(string speakerName)
-        //{
-        //    int nr = conferenceContext.Speakers.Count(x => x.FullName == speakerName);
-        //    if (nr == 0)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
+        public bool IsUniqueSpeaker(string speakerName)
+        {
+            int nr = conferenceContext.Speakers.Count(x => x.FullName == speakerName);
+            if (nr == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
-        //}
+        }
 
 
         public void Delete(Speakers speakerToDelete)

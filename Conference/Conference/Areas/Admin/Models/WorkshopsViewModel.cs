@@ -32,8 +32,8 @@ namespace Conference.Areas.Admin.Models
         
         public string RegistrationLink { get; set; }
 
-        [ForeignKey ("SpeakerId")]
-        public virtual Speakers Speaker { get; set; }
+        //[ForeignKey ("SpeakerId")]
+        //public virtual Speakers Speaker { get; set; }
 
     }
 }

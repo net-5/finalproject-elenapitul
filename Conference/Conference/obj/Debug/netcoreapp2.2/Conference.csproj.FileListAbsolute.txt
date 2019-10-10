@@ -160,7 +160,6 @@ C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-f
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SpeakerDetails.cshtml.g.cs
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Speakers\Details.cshtml.g.cs
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Speakers\Index.cshtml.g.cs
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Sponsors\Details.cshtml.g.cs
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Sponsors\Index.cshtml.g.cs
@@ -178,3 +177,5 @@ C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-f
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Conference.csproj.CopyComplete
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Conference.dll
 C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Conference.pdb
+C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\APE\Desktop\finalproject-elenapitul-feature-1\finalproject-elenapitul-feature-1\Conference\Conference\obj\Debug\netcoreapp2.2\Razor\Views\Speakers\Details.cshtml.g.cs
