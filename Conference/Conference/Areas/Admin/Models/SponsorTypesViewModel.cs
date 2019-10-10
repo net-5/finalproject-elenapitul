@@ -10,19 +10,25 @@ namespace Conference.Areas.Admin.Models
 {
     public class SponsorTypesViewModel
     {
+        [Required]
+        [Key]
         public int Id { get; set; }
 
         [Required]
+        [MinLength(2, ErrorMessage = "Sponsor Type name can't be less than 2 characters")]        
         public string Name { get; set; }
 
-        [Required]
-        [Range(1, 50)]
+        [Required]        
         public int Order { get; set; }
 
         [Required]
+        [MaxLength(4, ErrorMessage = "Edition name can't have more than 4 characters.")]
         public string Edition { get; set; }
 
-        public virtual ICollection<Sponsors> Sponsors { get; set; }
+        //public virtual ICollection<Sponsors> Sponsors { get; set; }
+
+       
+
     }
 }
 

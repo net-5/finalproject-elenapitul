@@ -11,7 +11,7 @@ namespace Conference.Domain.Entities
             get
             {
                 return FirstName + " " + LastName;
-            }
+            }           
         }
     }
 }

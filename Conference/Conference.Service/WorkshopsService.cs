@@ -66,7 +66,9 @@ namespace Conference.Service
 
         public Workshops UpdateWorkshop(Workshops workshopToUpdate)
         {
-            return workshopRepository.Update(workshopToUpdate);
+            Workshops updatedWorkshop;
+            updatedWorkshop = workshopRepository.Update(workshopToUpdate);
+            return updatedWorkshop;
         }
         
         public void Delete(Workshops workshopToDelete)

@@ -46,8 +46,10 @@ namespace Conference.TagHelpers
                     TagRenderMode = TagRenderMode.Normal
                 };
 
+                //acesta este atributul care este returnat de output-ul din TagHelper
                 myOption.Attributes.Add("value", sponsorType.Id.ToString());
-                myOption.InnerHtml.Append(sponsorType.Name);
+                //acesta este atributul care se afiseaza in elementul "option"
+                myOption.InnerHtml.Append(sponsorType.Id.ToString());
 
                 output.Content.AppendHtml(myOption);
 

@@ -11,12 +11,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
+
 namespace Conference.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class SpeakersController : Controller
     {
         private readonly ISpeakersService speakerService;
+
         public SpeakersController(ISpeakersService speakerService)
         {
             this.speakerService = speakerService;
@@ -33,7 +35,7 @@ namespace Conference.Areas.Admin.Controllers
         public ActionResult Details(int id)
         {
             Speakers speakers = speakerService.GetSpeakerById(id);
-            EditionsViewModel model = new EditionsViewModel();
+            SpeakersViewModel model = new SpeakersViewModel();
             model.InjectFrom(speakers);
             return View(speakers);
         }
@@ -51,22 +53,29 @@ namespace Conference.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 Speakers speaker = new Speakers();
                 speaker.InjectFrom(model);
-                var speakerToCreate = speakerService.AddSpeaker(speaker);
 
+                var speakerToCreate = speakerService.AddSpeaker(speaker);
 
                 if (speakerToCreate == null)
                 {
                     ModelState.AddModelError("Name", "Speaker name must be unique!");
                     return View(model);
                 }
+
                 return RedirectToAction(nameof(Index));
-
+                //return View(model);
             }
-            return View(model);            
-        }
 
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
+
+        }
         
         // GET: Speakers/Edit/5
         public ActionResult Edit(int id)

@@ -1,6 +1,5 @@
 ﻿@model Conference.Areas.Admin.Models.EditionsViewModel
 
-
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,7 +7,7 @@
 
 <h1>Create</h1>
 
-<h4>EditionViewModel</h4>
+<h3>Create a new Edition</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -20,10 +19,10 @@
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>-->
 
-            <input asp-for="Id" type="hidden" class="form-control" />
+            @*<input type="hidden" asp-for="Id" />*@
 
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label" style="font-style:italic"> Edition name can't have more than 4 characters. </label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -49,12 +48,11 @@
     </div>
 </div>
 
-
 <div>
-    <br />
     <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+

@@ -55,15 +55,24 @@ namespace Conference.Areas.Admin.Controllers
             {
                 SponsorTypes sponsorTypes = new SponsorTypes();
                 sponsorTypes.InjectFrom(model);
+                
                 var createNewSponsorType = sponsorTypeService.AddSponsorType(sponsorTypes);
+                
                 if (createNewSponsorType == null)
                 {
                     ModelState.AddModelError("Name", "The Name must be unique!");
                     return View(model);
                 }
+
                 return RedirectToAction(nameof(Index));
+                //return View(model);
             }
-            return View(model);
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
+           
         }
 
         // GET: SponsorType/Edit/5

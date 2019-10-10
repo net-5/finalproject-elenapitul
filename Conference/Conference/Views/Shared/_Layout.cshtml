@@ -18,62 +18,54 @@
     <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 
     <link href="/lib/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
-
     <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-
+    <link href="~/css/Index.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="/css/styles/index.css" asp-append-version="true" />
-    <script src="~/lib/jquery/jquery.js"></script>       
-
+    <link rel="stylesheet" href="/css/styles/index.css"/>
+    
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-default bg-mv">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <img class="img-responsive" src="~/img/[dotnetdays]colored-v2.png" alt="dotnetdays.ro" style="width: 15.6rem;" />
+                <a class="navbar-brand active" href="http://localhost:26590/">
+                    <img class="img-responsive" src="~/img/[dotnetdays]colored-v2.png" alt="http://localhost:26590/" style="width: 15.6rem;" />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse">
+
                     <ul class="navbar-nav justify-content-end d-flex flex-fill" id="main-menu">
-                        <li class="nav-item">
-                            @*<a class="nav-link" href="/Talks">Talks</a>*@
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Agenda <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            @*<a class="nav-link" href="/Speakers">Speakers</a>*@
-                            <a class="nav-link" asp-controller="Speakers" asp-action="Index">Speakers</a>
-                        </li>
-                        <li class="nav-item">
-                            @*<a class="nav-link" href="/Workshops">Workshops</a>*@
-                            <a class="nav-link" asp-controller="Workshops" asp-action="Index">Workshops</a>
-                        </li>
-                        <li class="nav-item">
-                            @*<a class="nav-link" href="/Sponsors">Partners</a>*@
-                            <a class="nav-link" asp-controller="Sponsors" asp-action="Index">Sponsors</a>
-                        </li>
+
                         <li class="nav-item">
                         <li>
-                            @*<a class="nav-link" href="/About">About</a>*@
-                            <a class="nav-link" asp-controller="Home" asp-action="Details">About </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" target="_blank" href="https://www.papercall.io/dotnetdaysro">CFP</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">.About</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Past Editions
-                            </a>
-                            <div class="dropdown-menu bg-mv" aria-labelledby="navbarDropdown">
-                                <a class="nav-link" href="/2019/Home">2019</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Sponsors" asp-action="Index">.Partners</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Speakers" asp-action="Index">.Speakers</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Talks" asp-action="Index">.Agenda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Workshops" asp-action="Index">.Workshops</a>
+                        </li>                                              
+
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="List" asp-action="Index">.ADMIN</a>
+                        </li>
+                    
                     </ul>
+
 
                     <ul class="menu-socials">
                         <li class="nav-item">
@@ -102,8 +94,18 @@
     </header>
 
 
+    <div class="container">
+        <div class="row parent">
 
-    @RenderBody()
+
+        </div>
+    </div>
+
+
+    <partial name="_CookieConsentPartial" />
+    <main role="main" class="pb-3" style="padding-bottom:0" ;>
+        @RenderBody()
+    </main>
 
     <div id="newsletter" class="">
         <div class="newsletter">
@@ -123,37 +125,36 @@
         </div>
     </div>
 
+
     <footer class="footer">
         <div class="container pb-3">
             <div class="row">
                 <div class="about col-xs-12 col-md-4">
-                    <h4>Links</h4>
                     <ul>
 
                         <li>
                             <a href="mailto:info@dotnetdays.ro">Contact Us</a>
                         </li>
                         <li>
-                            <a href="/Privacy">Privacy</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">.Privacy</a>
                         </li>
                         <li>
-                            <a href="/CoC">Code of Conduct</a>
-                        </li>
+                            <a asp-area="" asp-controller="Home" asp-action="About">.Code of Conduct</a>
+                        </li>                        
                         <li>
-                            <a href="">Terms & Conditions</a>
+                            <a asp-area="" asp-controller="Home" asp-action="About">.Terms & Conditions</a>
                         </li>
 
                     </ul>
 
                 </div>
-                <div class="current-edition col-xs-12 col-md-4">
-                    <h4>About Us</h4>
+                <div class="current-edition col-xs-12 col-md-4">                    
                     <ul>
                         <li>
-                            <a href="/About">About</a>
+                            <a asp-area="" asp-controller="Home" asp-action="About">.About us</a>
                         </li>
                         <li>
-                            <a href="/BeASponsor">Become a sponsor</a>
+                            <a asp-area="" asp-controller="Sponsors" asp-action="Index">.Become a sponsor</a>
                         </li>
 
                     </ul>
@@ -184,32 +185,36 @@
 
             </div>
             <div class="row">
-                <div class="text-right col-xs-12">&copy; 2019 - DotNetIasi</div>
+                <div class="text-center col-sm-12">© 2019 - DotNetIasi</div>
             </div>
         </div>
     </footer>
 
-
     <environment include="Development">
-        <script src="~/lib/jquery/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>        
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>        
     </environment>
+    
     <environment exclude="Development">
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous"
                 integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
         </script>
     </environment>
-    <script src="~/js/site.js" asp-append-version="true"></script>    
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <script type="text/javascript" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
-
-
-
 
 </body>
 </html>

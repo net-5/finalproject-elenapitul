@@ -3250,11 +3250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj",
       "projectName": "Conference.Domain",
-      "projectPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\Conference.Domain.csproj",
+      "projectPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\Conference.Domain.csproj",
       "packagesPath": "C:\\Users\\APE\\.nuget\\packages\\",
-      "outputPath": "C:\\Cmder\\Conference\\Conference\\Conference.Domain\\obj\\",
+      "outputPath": "C:\\Users\\APE\\Desktop\\finalproject-elenapitul-feature-1\\finalproject-elenapitul-feature-1\\Conference\\Conference.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

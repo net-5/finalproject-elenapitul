@@ -66,11 +66,15 @@ namespace Conference.Areas.Admin.Controllers
                     return View(model);
                 }
 
+                //return View(model);
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(model);
-            
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
         }
                 
         // GET: Sponsors/Edit/5

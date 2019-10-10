@@ -8,7 +8,7 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Speakers</h4>
+    <h3>Speakers</h3>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -116,6 +116,9 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })    
+</div>
+
+<div>
     <a asp-action="Index">Back to List</a>
 </div>

@@ -60,13 +60,18 @@ namespace Conference.Areas.Admin.Controllers
                 if (createNewTalk == null)
                 {
                     ModelState.AddModelError("Name", "The Name must be unique!");
-
                     return View(model);
                 }
+
+                //return View(model);
                 return RedirectToAction(nameof(Index));
             }
-            return View(model);
 
+            //return RedirectToAction(nameof(Index));
+            else
+            {
+                return View(model);
+            }
         }
         
         // GET: Talks/Edit/5
